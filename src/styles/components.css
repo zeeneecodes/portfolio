@@ -12,6 +12,10 @@
     @apply bg-primary text-text-dark dark:bg-primary-dark dark:text-text;
   }
 
+  .btn-neutral {
+    @apply border-1 border-primary text-primary dark:border-primary-dark dark:text-primary-dark;
+  }
+
   .tag {
     @apply text-xs uppercase bg-text text-text-dark font-semibold h-5 flex items-center px-3 rounded-sm whitespace-break-spaces;
 

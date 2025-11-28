@@ -5,7 +5,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import Content from "./ui/Content";
 import Card from "./ui/Card";
 import ToolBox from "./features/toolbox/ToolBox";
-import PersonalProjects from "./features/projects/StudyProjects";
+import PersonalProjects from "./features/projects/PersonalProjects";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <br />
         <br />
         <ToolBox />
+        <PersonalProjects />
         <br />
         <div>
           <h2>Regular Tags</h2>
@@ -29,6 +30,7 @@ function App() {
           <Icon type="regular" icon={<FaGithub />} title="Github" />
         </div>
         <br />
+
         <div>
           <Content title="Lorem Ipsum">
             <p>

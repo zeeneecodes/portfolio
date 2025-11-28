@@ -1,7 +1,7 @@
 @layer components {
   .btn-primary,
   .btn-neutral {
-    @apply py-1.5 px-6 rounded-md text-base;
+    @apply py-1.5 px-6 rounded-md text-base grow;
 
     &:not(:last-child) {
       @apply mr-1;
@@ -55,6 +55,22 @@
 
     & img {
       @apply mb-3;
+    }
+  }
+
+  .project {
+    @apply md:flex md:flex-row-reverse md:items-center md:justify-around;
+
+    & div {
+      @apply lg:w-md;
+    }
+
+    & img {
+      @apply w-86 lg:w-[450px] lg:h-[280px];
+    }
+
+    &:not(:last-child) {
+      @apply mb-20;
     }
   }
 }

@@ -5,6 +5,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import Content from "./ui/Content";
 import Card from "./ui/Card";
 import ToolBox from "./features/toolbox/ToolBox";
+import PersonalProjects from "./features/projects/StudyProjects";
 
 function App() {
   return (
@@ -67,36 +68,6 @@ function App() {
           </Content>
         </div>
         <br />
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          <Card
-            title="Phainon"
-            image="phainon-296w.png"
-            tags={["Khaslana", "Flame Reaver"]}
-            description="He is Phainon of Aedes Elysiae. A nameless hero who wished to fulfill everyone's wishes."
-            alt="phainon pic"
-          />
-          <Card
-            title="Phainon"
-            image="phainon-296w.png"
-            tags={["Khaslana", "Flame Reaver"]}
-            description="He is Phainon of Aedes Elysiae. A nameless hero who wished to fulfill everyone's wishes."
-            alt="phainon pic"
-          />
-          <Card
-            title="Phainon"
-            image="phainon-296w.png"
-            tags={["Khaslana", "Flame Reaver"]}
-            description="He is Phainon of Aedes Elysiae. A nameless hero who wished to fulfill everyone's wishes."
-            alt="phainon pic"
-          />
-          <Card
-            title="Phainon"
-            image="phainon-296w.png"
-            tags={["Khaslana", "FlameReaver", "hmmmmmmmmm", "this is another"]}
-            description="He is Phainon of Aedes Elysiae. A nameless hero who wished to fulfill everyone's wishes."
-            alt="phainon pic"
-          />
-        </div>
       </div>
     </main>
   );

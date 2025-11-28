@@ -1,0 +1,15 @@
+@theme {
+  /* FONTS  */
+  --font-sans-serif: "Nunito", sans-serif;
+  --font-serif: "Lora", serif;
+
+  /* LIGHT THEME COLORS */
+  --color-background: #eaeaea;
+  --color-text: #272635;
+  --color-primary: #567568;
+
+  /* DARK THEME COLORS */
+  --color-background-dark: #141414;
+  --color-text-dark: #cbcad8;
+  --color-primary-dark: #8aa89c;
+}

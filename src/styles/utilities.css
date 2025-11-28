@@ -1,0 +1,7 @@
+@utility primary-color-text {
+  @apply text-primary dark:text-primary-dark;
+}
+
+@utility regular-text {
+  @apply text-base md:text-lg lg:text-xl;
+}

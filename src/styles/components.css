@@ -1,0 +1,56 @@
+@layer components {
+  .btn-primary,
+  .btn-neutral {
+    @apply py-1.5 px-6 rounded-md text-base;
+
+    &:not(:last-child) {
+      @apply mr-1;
+    }
+  }
+
+  .btn-primary {
+    @apply bg-primary text-text-dark dark:bg-primary-dark dark:text-text;
+  }
+
+  .tag {
+    @apply text-xs uppercase bg-text text-text-dark font-semibold h-5 flex items-center px-3 rounded-sm whitespace-break-spaces;
+
+    /* &:not(:last-child) {
+      @apply mr-1;
+    } */
+  }
+
+  .icon-tech {
+    @apply inline-flex justify-center items-center h-20 w-20 md:h-24 md:w-24 lg:h-28 lg:w-28 flex-col my-3;
+
+    & svg {
+      @apply h-full w-full text-text dark:text-text-dark;
+    }
+
+    & span {
+      @apply mt-1 text-sm;
+    }
+  }
+
+  .icon-regular {
+    @apply inline-flex h-6 w-6 cursor-pointer mx-1;
+
+    & svg {
+      @apply h-full w-full text-text dark:text-text-dark hover:text-primary dark:hover:text-primary-dark transition-colors;
+    }
+  }
+
+  .content {
+    & p:not(:last-child) {
+      @apply mb-8;
+    }
+  }
+
+  .card {
+    @apply border-1 border-text dark:border-text-dark p-4 w-[288px] rounded-md overflow-hidden;
+
+    & img {
+      @apply mb-3;
+    }
+  }
+}

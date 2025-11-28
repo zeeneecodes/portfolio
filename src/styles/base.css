@@ -24,11 +24,15 @@
     @apply font-sans text-text dark:text-text-dark regular-text leading-7;
   }
 
-  a {
+  /* a {
     @apply primary-color-text underline regular-text italic font-serif;
-  }
+  } */
 
   button {
     @apply cursor-pointer;
+  }
+
+  img {
+    @apply rounded-md;
   }
 }

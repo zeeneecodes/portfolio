@@ -9,7 +9,7 @@ function ProjectPreview({
   studyLink,
 }) {
   return (
-    <div className="project">
+    <article className="project">
       <img src={img} alt="" />
       <div>
         <h2>{title}</h2>
@@ -40,7 +40,7 @@ function ProjectPreview({
           </div>
         ) : null}
       </div>
-    </div>
+    </article>
   );
 }
 

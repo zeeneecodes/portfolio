@@ -1,9 +1,11 @@
-function Content({ title, children }) {
+function Content({ heading, title, children }) {
   return (
-    <div className="content">
-      <h1>{title}</h1>
+    <article className="content">
+      {heading === "h1" && <h1>{title}</h1>}
+      {heading === "h2" && <h2>{title}</h2>}
+      {heading === "h3" && <h3>{title}</h3>}
       {children}
-    </div>
+    </article>
   );
 }
 

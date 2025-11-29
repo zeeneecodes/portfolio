@@ -45,6 +45,10 @@
   }
 
   .content {
+    &:not(:last-child) {
+      @apply mb-10;
+    }
+
     & p:not(:last-child) {
       @apply mb-8;
     }

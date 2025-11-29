@@ -35,4 +35,8 @@
   img {
     @apply rounded-md;
   }
+
+  ul {
+    @apply list-disc list-inside;
+  }
 }

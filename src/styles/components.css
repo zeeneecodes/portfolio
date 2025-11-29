@@ -59,7 +59,7 @@
   }
 
   .project {
-    @apply md:flex md:flex-row-reverse md:items-center md:justify-around;
+    @apply md:flex md:flex-row-reverse md:items-center md:justify-around mb-15 lg:mb-20;
 
     & div {
       @apply lg:w-md;
@@ -67,10 +67,6 @@
 
     & img {
       @apply w-86 lg:w-[450px] lg:h-[280px];
-    }
-
-    &:not(:last-child) {
-      @apply mb-20;
     }
   }
 }

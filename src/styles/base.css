@@ -6,7 +6,7 @@
   h1,
   h2,
   h3 {
-    @apply primary-color-text font-serif mt-3 mb-2;
+    @apply primary-color-text font-serif mt-3 mb-0.5 md:mb-2;
   }
 
   h1 {

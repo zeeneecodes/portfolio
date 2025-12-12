@@ -37,7 +37,7 @@
   }
 
   .icon-regular {
-    @apply inline-flex h-6 w-6 cursor-pointer mx-1;
+    @apply inline-flex h-6 w-6 md:h-7 md:w-7 lg:h-9 lg:w-9 cursor-pointer mx-1;
 
     & svg {
       @apply h-full w-full text-text dark:text-text-dark hover:text-primary dark:hover:text-primary-dark transition-colors;

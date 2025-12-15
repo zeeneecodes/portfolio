@@ -1,6 +1,6 @@
 @layer base {
   body {
-    @apply bg-background dark:bg-background-dark selection:bg-primary dark:selection:bg-primary-dark selection:text-text-dark dark:selection:text-text;
+    @apply bg-background selection:bg-primary selection:text-text-dark;
   }
 
   h1,
@@ -21,7 +21,7 @@
 
   p,
   span {
-    @apply font-sans text-text dark:text-text-dark regular-text leading-7;
+    @apply font-sans text-text regular-text leading-7;
   }
 
   /* a {

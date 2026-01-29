@@ -58,20 +58,30 @@
     @apply border-1 border-text p-4 w-[288px] rounded-md overflow-hidden;
 
     & img {
-      @apply mb-3;
+      @apply mb-3 w-[300px] h-45 object-center object-cover;
+    }
+
+    & p {
+      @apply text-base;
     }
   }
 
   .project {
-    @apply md:flex md:flex-row-reverse md:items-center md:justify-around mb-15 lg:mb-20;
+    @apply md:flex md:flex-row-reverse md:items-start md:justify-around mb-15 lg:mb-20 gap-4;
 
     & div {
       @apply lg:w-md;
     }
 
     & img {
-      @apply w-86 lg:w-[450px] lg:h-[280px];
+      @apply w-[21.88rem] h-[13.23rem] md:w-125 md:h-75;
     }
+  }
+
+  .text-link {
+    @apply border-b-primary border-b-4 shadow-[inset_0_-0.125em_0_primary] transition-[box-shadow,color] duration-270 ease-[cubic-bezier(0.77,0,0.175,1)];
+    @apply hover:shadow-[inset_0_-1.125em_0_primary] hover:text-text-dark hover:shadow-primary;
+    @apply focus:bg-primary focus:text-text-dark;
   }
 
   .timeline {
@@ -111,5 +121,28 @@
     /* & .entry:nth-child(odd) {
       @apply md:items-end;
     } */
+  }
+
+  .cs-h-img {
+    /* case study header image */
+    @apply max-w-244 w-full;
+
+    & img {
+      @apply mt-5 w-full h-full object-cover object-center;
+    }
+  }
+
+  .navbar {
+    @apply bg-text w-full p-4;
+
+    & ul {
+      @apply list-none flex justify-center gap-15 md:gap-25 uppercase text-text-dark text-sm;
+    }
+  }
+
+  .navlink {
+    @apply border-b-primary border-b-4 shadow-[inset_0_-0.125em_0_primary] transition-[box-shadow,color] duration-270 ease-[cubic-bezier(0.77,0,0.175,1)];
+    @apply hover:shadow-[inset_0_-1.125em_0_primary] hover:text-text-dark hover:shadow-primary;
+    @apply focus:bg-primary focus:text-text-dark;
   }
 }

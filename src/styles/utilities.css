@@ -1,5 +1,5 @@
 @utility primary-color-text {
-  @apply text-primary dark:text-primary-dark;
+  @apply text-primary;
 }
 
 @utility regular-text {

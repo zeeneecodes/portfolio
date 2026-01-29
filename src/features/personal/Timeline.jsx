@@ -4,17 +4,17 @@ function Timeline() {
       <h2 className="mb-10">Work Timeline</h2>
       <section className="timeline mb-30">
         <ol>
-          <li class="entry">
+          <li className="entry">
             <h3>2018, May</h3>
             <small className="title">@St. Paul University Manila</small>
             <p>Graduated Bachelor of Science in Computer Science </p>
           </li>
-          <li class="entry">
+          <li className="entry">
             <h3>2019, August</h3>
             <small className="title">@Adec Innovations</small>
             <p>Worked as a Business Process Associate</p>
           </li>
-          <li class="entry">
+          <li className="entry">
             <h3>2022, November</h3>
             <small className="title">@Collabera</small>
             <p>
@@ -29,7 +29,7 @@ function Timeline() {
       <h2 className="mb-10">Profesional Development Timeline</h2>
       <section className="timeline">
         <ol>
-          <li class="entry">
+          <li className="entry">
             <h3>2023, December</h3>
             <small className="title">@Professional Development</small>
             <p>
@@ -39,7 +39,7 @@ function Timeline() {
             </p>
             <p>Spent this early phase doing small practice exercises.</p>
           </li>
-          <li class="entry">
+          <li className="entry">
             <h3>2024, Mid-Year</h3>
             <small className="title">@Professional Development</small>
             <p>
@@ -49,7 +49,7 @@ function Timeline() {
               and code organization.
             </p>
           </li>
-          <li class="entry">
+          <li className="entry">
             <h3>2024, Late</h3>
             <small className="title">@Professional Development</small>
             <p>
@@ -59,7 +59,7 @@ function Timeline() {
               problem solving and code organization.
             </p>
           </li>
-          <li class="entry">
+          <li className="entry">
             <h3>2025, January</h3>
             <small className="title">@Professional Development</small>
             <p>
@@ -67,7 +67,7 @@ function Timeline() {
               design, state management, routing, and practical UI patterns.
             </p>
           </li>
-          <li class="entry after:bg-primary">
+          <li className="entry after:bg-primary">
             <h3>2025, August - Present</h3>
             <small className="title">@Professional Development</small>
             <p>

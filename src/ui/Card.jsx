@@ -3,7 +3,7 @@ import Tag from "./Tag";
 function Card({ tags, title, description, liveLink, studyLink, image, alt }) {
   return (
     <div className="card">
-      <img src={image} alt={alt} />
+      <img loading="lazy" src={image} alt={alt} />
       <div className="flex w-[254px] gap-1 flex-wrap">
         {tags.map((tag, i) => (
           <Tag key={i} tag={tag} />
@@ -15,18 +15,14 @@ function Card({ tags, title, description, liveLink, studyLink, image, alt }) {
       {liveLink || studyLink ? (
         <div className="flex mt-6 justify-between">
           {liveLink && (
-            <button className="btn-primary">
-              <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                Live Demo
-              </a>
-            </button>
+            <a href={liveLink} target="_blank" rel="noopener noreferrer">
+              <button className="btn-primary">Live Demo</button>
+            </a>
           )}
           {studyLink && (
-            <button className="btn-neutral">
-              <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                Read More
-              </a>
-            </button>
+            <a href={liveLink} target="_blank" rel="noopener noreferrer">
+              <button className="btn-neutral">Read More</button>
+            </a>
           )}
         </div>
       ) : null}

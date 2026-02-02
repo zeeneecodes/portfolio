@@ -1,9 +1,14 @@
-function Icon({ type, icon, title }) {
+function Icon({ type, icon, title, link }) {
   if (type === "regular")
     return (
-      <div className="icon-regular" title={title}>
+      <a
+        className="icon-regular"
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {icon}
-      </div>
+      </a>
     );
   if (type === "tech")
     return (

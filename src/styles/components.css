@@ -37,7 +37,7 @@
   }
 
   .icon-regular {
-    @apply inline-flex h-6 w-6 md:h-7 md:w-7 lg:h-9 lg:w-9 cursor-pointer mx-1;
+    @apply inline-flex h-6 w-6 md:h-7 md:w-7 lg:h-9 lg:w-9 cursor-pointer mx-2 my-1;
 
     & svg {
       @apply h-full w-full text-text hover:text-primary transition-colors;
@@ -147,6 +147,6 @@
   }
 
   footer {
-    @apply bg-text w-full p-4 text-text-dark text-sm mt-20;
+    @apply bg-text w-full p-4 text-text-dark text-sm mt-20 text-center;
   }
 }

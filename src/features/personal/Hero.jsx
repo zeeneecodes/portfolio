@@ -7,9 +7,24 @@ function Hero() {
       <div>
         <h1 className="text-5xl md:text-7xl lg:text-8xl">Hi, I'm Rizzi!</h1>
         <p className="mb-3">Some text and personal intro</p>
-        <Icon type="regular" icon={<FaEnvelope />} title="Email" />
-        <Icon type="regular" icon={<FaLinkedin />} title="LinkedIn" />
-        <Icon type="regular" icon={<FaGithub />} title="Github" />
+        <Icon
+          type="regular"
+          icon={<FaEnvelope />}
+          title="Email"
+          link="mailto:cabrerarizzi@gmail.com"
+        />
+        <Icon
+          type="regular"
+          icon={<FaLinkedin />}
+          title="LinkedIn"
+          link="https://www.linkedin.com/in/rizzi-eunice-cabrera-54a687148/"
+        />
+        <Icon
+          type="regular"
+          icon={<FaGithub />}
+          title="Github"
+          link="https://github.com/zeeneecodes"
+        />
       </div>
     </header>
   );

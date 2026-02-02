@@ -1,5 +1,3 @@
-import { Link, NavLink } from "react-router-dom";
-
 function NavBar() {
   return (
     <nav className="navbar">
@@ -11,7 +9,7 @@ function NavBar() {
           <a href="/about">about</a>
         </li>
         <li className="navlink">
-          <a href="/about">resume</a>
+          <a href="">resume</a>
         </li>
       </ul>
     </nav>

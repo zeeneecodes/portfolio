@@ -49,7 +49,7 @@ function ProjectPreview({
               </a>
             )}
             {studyLink && (
-              <a href={studyLink} target="_blank" rel="noopener noreferrer">
+              <a href={studyLink}>
                 <button className="btn-neutral">Read More</button>
               </a>
             )}

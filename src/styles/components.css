@@ -145,4 +145,8 @@
     @apply hover:shadow-[inset_0_-1.125em_0_primary] hover:text-text-dark hover:shadow-primary;
     @apply focus:bg-primary focus:text-text-dark;
   }
+
+  footer {
+    @apply bg-text w-full p-4 text-text-dark text-sm mt-20;
+  }
 }

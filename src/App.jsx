@@ -5,6 +5,7 @@ import Bio from "./features/personal/Bio";
 import Cashier from "./features/projects/Cashier";
 import MoneyPouch from "./features/projects/MoneyPouch";
 import NavBar from "./ui/NavBar";
+import Footer from "./ui/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="overview/moneypouch" element={<MoneyPouch />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   );
 }

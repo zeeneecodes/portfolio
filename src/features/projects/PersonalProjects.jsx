@@ -1,8 +1,6 @@
-import Card from "../../ui/Card";
 import Content from "../../ui/Content";
 import ProjectPreview from "../../ui/ProjectPreview";
 import Tag from "../../ui/Tag";
-import StudyProjects from "./StudyProjects";
 
 function PersonalProjects() {
   return (
@@ -34,6 +32,22 @@ function PersonalProjects() {
           description="A personal budgeting tool that is inspired by Dave Ramsey's cash envelope system, zero based budgeting, and YNAB. It allows users to manually allocate their income, create categories, and track transactions. It is the accumulation of everything I learned from Jonas Schmedtmann's Udemy React Course"
           liveLink="https://money-pouch.vercel.app/"
           studyLink="overview/moneypouch"
+        />
+        <ProjectPreview
+          title="Portfolio"
+          tags={["React", "Tailwind"]}
+          img={[
+            {
+              pic: "/moneypouch-xs.jpg",
+              media: "(max-width:640px)",
+            },
+            {
+              pic: "/moneypouch-md.jpg",
+              media: "(max-width:768px)",
+            },
+          ]}
+          description="A personal portfolio website showcasing the projects I am proud off during my upskilling."
+          studyLink="overview/portfolio"
         />
         <ProjectPreview
           title="Basic Cashier"

@@ -18,10 +18,6 @@
 
   .tag {
     @apply text-xs uppercase bg-text text-text-dark font-semibold h-5 flex items-center px-3 rounded-sm whitespace-break-spaces;
-
-    /* &:not(:last-child) {
-      @apply mr-1;
-    } */
   }
 
   .icon-tech {
@@ -67,14 +63,18 @@
   }
 
   .project {
-    @apply md:flex md:flex-row-reverse md:items-start md:justify-around mb-15 lg:mb-20 gap-4;
+    @apply md:flex md:flex-row-reverse md:items-start md:justify-around w-full;
+
+    &:not(:last-child) {
+      @apply mb-20 lg:mb-25;
+    }
 
     & div {
       @apply lg:w-md;
     }
 
-    & img {
-      @apply w-[21.88rem] h-[13.23rem] md:w-125 md:h-75;
+    & picture {
+      @apply w-140 h-[13.23rem];
     }
   }
 
@@ -117,10 +117,6 @@
     & .title {
       @apply text-primary font-semibold italic;
     }
-
-    /* & .entry:nth-child(odd) {
-      @apply md:items-end;
-    } */
   }
 
   .cs-h-img {

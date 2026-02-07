@@ -11,38 +11,29 @@ function ProjectPreview({
 }) {
   return (
     <article className="project">
-      {/* 
-      <picture>
-	<source srcset="picture-300px.png" media="(max-width:500px)">
-	<source srcset="picture-400px.png" media="(max-width:650px)">
-	<source srcset="picture-500px.png" media="(max-width:800px)">
-	
-	<!-- 
-	  - the image that loads if browser does not support picture element 
-	  - the catch-all / default image
-	-->
-	<img src="picture.png" alt="A Picture" />
-</picture>
-      */}
-      {/* <img src={img} alt="" /> */}
       <picture>
         {img.map((img, i) => {
           return <source key={i} srcSet={img.pic} media={img.media} />;
         })}
-        <img loading="lazy" src={img[1].pic} alt={alt} />
+        <img
+          className="w-full h-auto"
+          loading="lazy"
+          src={img[1].pic}
+          alt={alt}
+        />
       </picture>
-      <div className="max-w-[450px]">
+      <div className="flex flex-col flex-1 h-80">
         <h2 className="mt-0">{title}</h2>
         <div className="flex gap-1 flex-wrap mt-3">
           {tags.map((tag, i) => (
             <Tag key={i} tag={tag} />
           ))}
         </div>
-        <p className="mt-5">{description}</p>
+        <p className="mt-5 md:w-100">{description}</p>
 
         {/* BUTTONS */}
         {liveLink || studyLink ? (
-          <div className="flex mt-6 gap-2">
+          <div className="flex items-end mt-5 lg:mt-auto gap-2">
             {liveLink && (
               <a href={liveLink} target="_blank" rel="noopener noreferrer">
                 <button className="btn-primary">Live Demo</button>

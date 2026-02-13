@@ -7,7 +7,7 @@ const { xs, md } = mediaSize;
 function MoneyPouch() {
   return (
     <main className="flex flex-col justify-center items-center my-20">
-      <div className="max-w-5xl flex flex-col justify-center px-6 gap-20 items-stretch">
+      <div className="max-w-5xl flex flex-col justify-center px-6 gap-5 items-stretch">
         <section>
           <h1>Money Pouch</h1>
           <div className="flex gap-1 flex-wrap my-6">

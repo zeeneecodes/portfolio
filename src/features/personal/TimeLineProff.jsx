@@ -5,7 +5,7 @@ function TimeLineProff() {
     <main className="flex flex-col justify-center items-center mt-20 mb-5">
       <div className="max-w-5xl flex flex-col justify-center px-6 gap-10 items-stretch">
         {/* PROFESSIONAL DEVELOPMENT */}
-        <h1>Profesional Development / Upskilling Timeline</h1>
+        <h1>Professional Development / Upskilling Timeline</h1>
         <section>
           <h2>• August 2025 - Present</h2>
           <Content>

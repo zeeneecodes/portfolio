@@ -38,11 +38,11 @@ function PersonalProjects() {
           tags={["React", "Tailwind"]}
           img={[
             {
-              pic: "/moneypouch-xs.jpg",
+              pic: "/portfolio-xs.jpg",
               media: "(max-width:640px)",
             },
             {
-              pic: "/moneypouch-md.jpg",
+              pic: "/portfolio-md.jpg",
               media: "(max-width:768px)",
             },
           ]}

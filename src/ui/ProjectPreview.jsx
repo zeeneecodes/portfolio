@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Tag from "./Tag";
 
 function ProjectPreview({
@@ -40,9 +41,9 @@ function ProjectPreview({
               </a>
             )}
             {studyLink && (
-              <a href={studyLink}>
+              <Link to={studyLink}>
                 <button className="btn-neutral">Read More</button>
-              </a>
+              </Link>
             )}
           </div>
         ) : null}

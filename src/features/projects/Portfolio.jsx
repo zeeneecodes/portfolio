@@ -6,8 +6,8 @@ const { xs, md } = mediaSize;
 
 function Portfolio() {
   return (
-    <main className="flex flex-col justify-center items-center pt-10">
-      <div className="max-w-5xl flex flex-col justify-center px-6 gap-20 items-stretch">
+    <main className="flex flex-col justify-center items-center my-20">
+      <div className="max-w-5xl flex flex-col justify-center px-6 gap-5 items-stretch">
         <section>
           <h1>Portfolio</h1>
           <div className="flex gap-1 flex-wrap mb-3">
@@ -16,13 +16,11 @@ function Portfolio() {
           </div>
           <figure className="cs-h-img">
             <picture>
-              <source srcSet="/cashier-xs.jpg" media={xs} />
-              <source srcSet="/cashier-md.jpg" media={md} />
-              <img src="/cashier-lg.jpg" alt="" />
+              <source srcSet="/portfolio-xs.jpg" media={xs} />
+              <source srcSet="/portfolio-md.jpg" media={md} />
+              <img src="/portfolio-lg.jpg" alt="" />
             </picture>
-            <p className="italic text-xs">
-              Basic Front-end App / Learning Project
-            </p>
+            <p className="italic text-xs">Personal Project Showcase</p>
           </figure>
         </section>
         <section>
@@ -34,8 +32,8 @@ function Portfolio() {
           </Content>
           <Content heading="h2" title="What I built / learned">
             <ul>
-              <li>Dived into how UI filtering works without any frameworks</li>
-              <li>Imitating a cashier's UI and how its calculation works</li>
+              <li>Getting comfortable with using tailwind</li>
+              <li>Planning ahead when using responsive ui/ux</li>
             </ul>
           </Content>
           <Content heading="h2" title="Challenges & Problem-Solving">

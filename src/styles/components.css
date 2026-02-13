@@ -46,7 +46,7 @@
     }
 
     & p:not(:last-child) {
-      @apply mb-8;
+      @apply mb-5;
     }
   }
 
@@ -88,11 +88,14 @@
     @apply relative;
 
     /* timeline line */
-    @apply before:content-[''] before:h-full before:w-0.5 before:bg-text before:absolute before:left-1/2 before:z-0 before:-translate-x-1/2 max-sm:transform-none;
-    @apply max-sm:before:left-[4%] max-sm:transform-none;
+    @apply before:content-[''] before:h-full before:w-0.5 before:bg-text before:absolute before:left-1/2 before:z-0 before:-translate-x-1/2;
+    @apply before:left-[4%] transform-none;
+    /* @apply before:content-[''] before:h-full before:w-0.5 before:bg-text before:absolute before:left-1/2 before:z-0 before:-translate-x-1/2 max-sm:transform-none;
+    @apply max-sm:before:left-[4%] max-sm:transform-none; */
 
     & ol {
-      @apply flex flex-col gap-7 md:self-end;
+      @apply md:w-75 lg:w-95;
+      /* @apply flex flex-col; */
     }
 
     & h3 {
@@ -100,19 +103,25 @@
     }
 
     & .entry {
-      @apply flex flex-col gap-1 mb-8 w-1/2 max-sm:w-[90%] max-sm:self-end px-5;
+      @apply flex flex-col mb-6 w-full px-5;
+      /* @apply flex flex-col gap-1 mb-8 w-1/2 self-end px-5; */
 
       /* circle */
-      @apply after:absolute after:content-[''] after:w-6 after:h-6 after:bg-text after:z-1 after:left-1/2 after:-translate-x-1/2 after:rounded-xl max-sm:after:left-[4%] after:border-7 after:border-background;
+      @apply after:absolute after:content-[''] after:w-6 after:h-6 after:bg-text after:z-1 after:-translate-x-1/2 after:rounded-xl after:left-[4%] after:border-7 after:border-background;
 
       & h3 {
         @apply mt-0;
       }
     }
 
-    & .entry:nth-child(even) {
-      @apply self-end;
+    /* timeline date */
+    .tld {
+      @apply text-primary font-bold;
     }
+
+    /* & .entry:nth-child(even) {
+      @apply self-end;
+    } */
 
     & .title {
       @apply text-primary font-semibold italic;
@@ -129,7 +138,7 @@
   }
 
   .navbar {
-    @apply bg-text w-full p-4;
+    @apply bg-text w-full p-4 fixed top-0 z-100;
 
     & ul {
       @apply list-none flex justify-center gap-15 md:gap-25 uppercase text-text-dark text-sm;
@@ -143,6 +152,6 @@
   }
 
   footer {
-    @apply bg-text w-full p-4 text-text-dark text-sm mt-20 text-center;
+    @apply bg-text w-full p-4 text-text-dark text-sm mt-20 text-center fixed bottom-0 z-100;
   }
 }

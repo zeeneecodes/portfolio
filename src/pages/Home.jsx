@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <Hero />
-      <main className="flex flex-col justify-center items-center pt-30">
+      <main className="flex flex-col justify-center items-center mt-20 mb-40">
         <div className="w-full max-w-5xl flex flex-col justify-center items-center px-6 gap-30">
           <ToolBox />
           <PersonalProjects />

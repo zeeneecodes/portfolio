@@ -6,14 +6,14 @@ const { xs, md } = mediaSize;
 
 function Cashier() {
   return (
-    <main className="flex flex-col justify-center items-center pt-30">
+    <main className="flex flex-col justify-center items-center my-20">
       <div className="max-w-5xl flex flex-col justify-center px-6 gap-20 items-stretch">
         <section>
+          <h1>Basic Cashier</h1>
           <div className="flex gap-1 flex-wrap mb-3">
             <Tag tag="advanced javascript" />
             <Tag tag="dom manipulation" />
           </div>
-          <h1>Basic Cashier</h1>
           <figure className="cs-h-img">
             <picture>
               <source srcSet="/cashier-xs.jpg" media={xs} />

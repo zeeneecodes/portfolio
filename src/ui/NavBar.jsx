@@ -11,7 +11,13 @@ function NavBar() {
           <Link to="/about">about</Link>
         </li>
         <li className="navlink">
-          <a href="">resume</a>
+          <a
+            href="https://drive.google.com/file/d/12Xr2wAkIOFVkpWFOLp_qYdl5iasXTuxi/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            resume
+          </a>
         </li>
       </ul>
     </nav>

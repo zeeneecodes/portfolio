@@ -28,8 +28,9 @@ function Timeline() {
               <span className="tld">2022, November</span>
               <small className="title">@Collabera</small>
               <p className="mt-3">
-                First IT job as a junior Database Administrator, assigned to
-                work at Security Bank
+                First IT job as a junior Database Administrator, assigned to a
+                confidential enterprise organization to provide general DBA
+                operational support.
               </p>
             </li>
           </ol>

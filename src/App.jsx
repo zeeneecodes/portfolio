@@ -8,11 +8,13 @@ import NavBar from "./ui/NavBar";
 import Footer from "./ui/Footer";
 import Portfolio from "./features/projects/Portfolio";
 import TimeLineProff from "./features/personal/TimeLineProff";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
